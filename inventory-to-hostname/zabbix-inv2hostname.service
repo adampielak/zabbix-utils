@@ -1,0 +1,11 @@
+[Unit]
+Description=Zabbix Inventory-Name to Hostname
+
+
+[Service]
+EnvironmentFile=/etc/zabbix/zabbix-inv2hostname.conf
+ExecStart=/root/custom-scripts/inventory-to-hostname/zabbix-inv2hostname.py -u $USERNAME -p $PASSWORD -l $URL
+Restart=always
+
+[Install]
+WantedBy    = multi-user.target
