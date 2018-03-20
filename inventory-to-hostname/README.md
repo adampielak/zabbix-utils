@@ -5,23 +5,24 @@
 
 
 ## How
-- **installation**
+##### **Installation**
 ```sh
 $ ./install.sh         Configures, installs and runs via systemd zabbix-inv2hostname.py
 ```
 
-- **dependancies**
--- Python 2.7 min.
--- pyzabbix libs (installed via pip by install script).
+##### **Dependancies**
+* Python 2.7 min.
+* pyzabbix libs (installed via pip by install script).
 
 
-- **logging**
+##### **Logging**
 
 logging is managed directly on systemd and could be checked by:
 
 ```sh
 $ journalctl -f -u zabbix-inv2hostname
 ```
+
 ## Where
 - **zabbix-inv2hostname.py** Python script copied into /usr/local/sbin/
 - **zabbix-inv2hostname.conf** text configuration copied and configured in /etc/zabbix/
