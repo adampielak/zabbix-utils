@@ -29,7 +29,7 @@ $ journalctl -f -u zabbix-inv2hostname
 - **zabbix-inv2hostname.service** Systemd configuration copied into /etc/systemd/system
 
 ## Who
-Author: Sergio Cricca - scricca@tomware.it
+Author: Sergio Cricca
 
 ## When
 March 2018
